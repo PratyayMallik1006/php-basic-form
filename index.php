@@ -48,19 +48,20 @@ if(isset($_POST['name'])){
     
     <!-- Bootstrap core CSS -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
- crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
 
  <link rel="stylesheet" href="style.css">
     <title>Volunteer Form</title>
 </head>
 <body>
+    
     <div class="container">
     <h1 class="h1 mb-1 fw-normal">COVID-19 volunteer form</h1>
         <p>Enter your details below to help frontline workers</p>
         <?php
         if($insert == true){
-        echo "<p class='submitMsg'>Registered successfully</p>";
+        echo "<p class='submitMsg alert alert-success d-flex align-items-center'>$name ,Registered successfully</p>";
         }
         ?>
         <form action="index.php" method="post">
